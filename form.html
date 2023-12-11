@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="form.css">
+
+    <title>Registration Form</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form autocomplete="off" id="registrationForm" onsubmit="return validation()">
+            <h2 id="register">
+                ________Register________
+            </h2>
+            <p id="create">
+                Create your account. Its free and takes a minute.
+            </p>
+
+            <div class="formtype">
+
+                <input type="text" id="first" placeholder="First Name" required>
+
+                <input type="text" id="last" placeholder="Last Name" required>
+
+            </div>
+
+            <input type="text" id="emails" placeholder="Email" required>
+
+            <input type="text" id="pass" placeholder="Password" required>
+           
+            <input type="text" id="confirmpass" placeholder="Confirm Password" required>
+
+            <input type="checkbox" id="check" name="check" value="Accept" required>
+            <label for="check" id="terms">I accept the <a href="#">Terms of Uses</a> and <a href="#">Privacy Policies</a></label>
+
+            <button type="submit">Register Now</button>
+
+            <p class="signin-link">
+                Already have an account? <a href="https://login.yahoo.com/?.intl=in" target="_blank">Sign in</a>
+            </p>
+
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+
+</body>
+
+</html>
